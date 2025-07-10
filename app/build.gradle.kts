@@ -127,8 +127,6 @@ dependencies {
 
     implementation(libs.torangRepository)
     implementation(libs.theme)
-    implementation(libs.basefeed)
-    implementation(libs.feed)
     implementation(libs.commonImageLoader)
     implementation(libs.composePermissionTest)
     implementation(libs.bottomdetectlazycolunm)
