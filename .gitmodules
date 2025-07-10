@@ -1,3 +1,12 @@
 [submodule "library/src/main/java/com/sarang/torang/di/restaurant_gallery_di"]
 	path = library/src/main/java/com/sarang/torang/di/restaurant_gallery_di
 	url = https://github.com/sarang628/restaurant_gallery_di.git
+[submodule "library/src/main/java/com/sarang/torang/di/repository"]
+	path = library/src/main/java/com/sarang/torang/di/repository
+	url = https://github.com/sarang628/repository.git
+[submodule "app/src/main/java/com/sarang/torang/di/repository"]
+	path = app/src/main/java/com/sarang/torang/di/repository
+	url = https://github.com/sarang628/repository.git
+[submodule "app/src/main/java/com/sarang/torang/di/restaurant_gallery_di"]
+	path = app/src/main/java/com/sarang/torang/di/restaurant_gallery_di
+	url = https://github.com/sarang628/restaurant_gallery_di.git
