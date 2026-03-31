@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.sarang.torang.compose.type.LocalRestaurantGalleryImageLoader
 import com.sarang.torang.compose.type.LocalRestaurantGalleryPullToRefresh
+import com.sarang.torang.compose.type.RestaurantGalleryImageLoaderData
 import com.sarang.torang.data.RestaurantImage
 import com.sarang.torang.data.testRestaurantImage
 import kotlinx.coroutines.launch
@@ -71,16 +72,16 @@ fun _RestaurantGalleryScreen(
             columns = StaggeredGridCells.Adaptive(200.dp), content = {
                 items(list.size) {
                     LocalRestaurantGalleryImageLoader.current.invoke(
+                        RestaurantGalleryImageLoaderData(
                         Modifier
                             .fillMaxSize()
                             .wrapContentSize()
                             .clickable {
                                 onImage.invoke(list[it].id)
                             },
-                        list[it].url,
-                        null,
-                        null,
-                        ContentScale.Crop
+                        url = list[it].url,
+                        contentScale = ContentScale.Crop
+                        )
                     )
                 }
             })
