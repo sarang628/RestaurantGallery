@@ -1,6 +1,8 @@
 package com.sarang.torang.compose.type
 
 import android.util.Log
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.Modifier
@@ -24,5 +26,6 @@ val LocalRestaurantGalleryImageLoader = compositionLocalOf<RestaurantGalleryImag
     // 기본 구현: 경고 로그 출력
     @Composable {
         Log.w("ImageLoader", "No ImageLoader provided.")
+        Box(modifier = it.modifier.background(color = androidx.compose.ui.graphics.Color.LightGray))
     }
 }
